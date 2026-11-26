@@ -1,6 +1,4 @@
-/* ==========================================================================
-   1. CONFIGURAZIONI GENERALI E RESET
-   ========================================================================== */
+
 * {
     margin: 0;
     padding: 0;
@@ -33,9 +31,7 @@ body {
     display: none !important;
 }
 
-/* ==========================================================================
-   2. INTESTAZIONE (HEADER)
-   ========================================================================== */
+
 header {
     background-color: #fde8e9;
     padding: 15px 0;
@@ -103,9 +99,6 @@ header .container {
     background-color: #000;
 }
 
-/* ==========================================================================
-   3. OVERLAY E MENU LATERALE
-   ========================================================================== */
 .overlay {
     position: fixed;
     top: 0;
@@ -166,9 +159,7 @@ header .container {
     letter-spacing: 2px;
 }
 
-/* ==========================================================================
-   4. SCHEDA 1: HOME
-   ========================================================================== */
+
 .top-contact-bar {
     background-color: #1a1a1a;
     color: #ffffff;
@@ -361,9 +352,7 @@ header .container {
     margin-top: 4px;
 }
 
-/* ==========================================================================
-   5. SCHEDA 2: IL MENU
-   ========================================================================== */
+
 .menu-hero-header {
     text-align: center;
     padding: 30px 0 10px;
@@ -474,9 +463,6 @@ header .container {
     border: 1px solid #e0e0e0;
 }
 
-/* ==========================================================================
-   6. SCHEDA 3: GIOCO DEGLI SCONTI
-   ========================================================================== */
 .game-header {
     text-align: center;
     padding: 40px 0 25px;
@@ -668,9 +654,7 @@ header .container {
     background-color: #5a1610;
 }
 
-/* ==========================================================================
-   7. SCHEDA 4: CONTATTI / LE NOSTRE CASE
-   ========================================================================== */
+
 .houses-hero-container {
     position: relative;
     width: 100%;
@@ -798,9 +782,7 @@ header .container {
     line-height: 1.4;
 }
 
-/* ==========================================================================
-   8. MODAL DETTAGLI PIZZA (CON PREZZO SCONTATO E ORIGINALE BARRATO)
-   ========================================================================== */
+
 .modal {
     position: fixed;
     top: 50%;
@@ -871,7 +853,7 @@ header .container {
     margin: 0 auto 16px;
 }
 
-/* Preço sem desconto */
+
 .modal-price {
     display: inline-block;
     font-size: 22px;
@@ -879,7 +861,7 @@ header .container {
     color: #1a1a1a;
 }
 
-/* Preço com desconto aplicado */
+
 .modal-discount-box {
     display: flex;
     flex-direction: column;
@@ -917,9 +899,7 @@ header .container {
     color: #2e7d32;
 }
 
-/* ==========================================================================
-   9. RESPONSIVITÀ DESKTOP (>= 768px)
-   ========================================================================== */
+
 @media (min-width: 768px) {
     .hero-banner-img {
         height: 480px;
