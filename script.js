@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const btnHeaderSconti = document.getElementById('btn-header-sconti');
     const btnGameToMenu = document.getElementById('btn-game-to-menu');
 
-    // ELEMENTI DEL MODAL
+    
     const pizzaModal = document.getElementById('pizza-modal');
     const closeModalBtn = document.getElementById('close-modal');
     const modalTitle = document.getElementById('modal-title');
@@ -25,12 +25,12 @@ document.addEventListener('DOMContentLoaded', () => {
     const STORAGE_KEY = 'luigia_sconti_daily_v1';
     const MAX_ATTEMPTS = 3;
 
-    // Formata um número em Real Brasileiro (ex: 54 -> "R$ 54,00")
+   
     function formatCurrency(value) {
         return 'R$ ' + value.toFixed(2).replace('.', ',');
     }
 
-    // Recupera o desconto ativo ganho hoje (se houver)
+  
     function getActiveDiscount() {
         const today = getTodayString();
         const savedData = JSON.parse(localStorage.getItem(STORAGE_KEY) || 'null');
@@ -40,7 +40,7 @@ document.addEventListener('DOMContentLoaded', () => {
         return 0;
     }
 
-    // CONTROLE DO MENU LATERAL
+   
     function openMenu() {
         sidebar.classList.add('active');
         overlay.classList.add('active');
@@ -58,7 +58,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (openMenuBtn) openMenuBtn.addEventListener('click', openMenu);
     if (closeMenuBtn) closeMenuBtn.addEventListener('click', closeMenu);
 
-    // TROCA DE ABAS
+   
     function switchTab(targetTabId) {
         tabContents.forEach(tab => tab.classList.remove('active'));
         navItems.forEach(nav => nav.classList.remove('active'));
@@ -102,7 +102,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // MODAL DAS PIZZAS (COM CÁLCULO AUTOMÁTICO DE DESCONTO)
+    
     menuCards.forEach(card => {
         card.addEventListener('click', () => {
             const basePrice = parseFloat(card.getAttribute('data-price'));
@@ -147,9 +147,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // ==========================================================================
-    // GIOCO DEGLI SCONTI (JOGO DA MEMÓRIA - 8 CARTAS, 3 CHANCES, RESET DIÁRIO)
-    // ==========================================================================
+  
     const memoryBoard = document.getElementById('memory-board');
     const attemptsCountEl = document.getElementById('attempts-count');
     const resultBox = document.getElementById('game-result-box');
